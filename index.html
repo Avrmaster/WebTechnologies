@@ -5,7 +5,7 @@
 	<title>Apple Co</title>
 	<!--    -->
 
-	<link type="text/css" rel="stylesheet" href="index.css" />
+	<link type="text/css" rel="stylesheet" href="css/index.css" />
 </head>
 <body>
 <div id="main" class="container">
@@ -27,7 +27,7 @@
 			We can sell even a cucumber for $2000
 		</blockquote>
 	</div>
-	<nav>
+	<nav class="logicalBlock navigationBlock">
 		<ul class="navigation">
 			<li><a href="#about">Про нас</a></li>
 			<li><a href="#controls">Контролюючі органи</a></li>
@@ -53,44 +53,54 @@
 		<h3>
 			Про нас
 		</h3>
-		<p>
-			<b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry.
-			Lorem Ipsum has been the industry's standard <sup>dummy text</sup> ever since the 1500s,
-			when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-			Contrary to popular belief, <i>Lorem Ipsum</i> is not simply random text.
-			It has roots in a piece of classical Latin literature from <sub>45 BC</sub>, making it over 2000 years old.
-			There are many variations of passages of <u>Lorem Ipsum</u> available, but the majority have suffered
-			alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-			<br /><br />
-			<em>Sed ut perspiciatis unde omnis iste</em> natus error sit voluptatem accusantium doloremque laudantium, totam
-			rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-			Nemo
-			enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
-			ratione voluptatem sequi nesciunt. <strong>Neque porro</strong> quisquam est, qui dolorem ipsum quia dolor sit
-			amet,
-			consectetur, adipisci velit, sed quia non numquam
-			<ins>eius</ins>
-			modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-			voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-			aliquid ex ea commodi consequatur?
-			<del>Quis autem</del>
-			vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
-			molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-			<br /><br />
-			But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will
-			give you a complete account of the system, and expound the actual teachings of the great explorer of the truth,
-			the
-			master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure,
-			but
-			because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
-			Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but
-			because
-			occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial
-			example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who
-			has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one
-			who
-			avoids a pain that produces no resultant pleasure?
-		</p>
+		<div>
+			<p class="large-font">
+				<b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry.
+				Lorem Ipsum has been the industry's standard <sup>dummy text</sup> ever since the 1500s,
+				when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				Contrary to popular belief, <i>Lorem Ipsum</i> is not simply random text.
+				It has roots in a piece of classical Latin literature from <sub>45 BC</sub>, making it over 2000 years old.
+				There are many variations of passages of <u>Lorem Ipsum</u> available, but the majority have suffered
+				alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+			</p>
+			<br />
+			<p class="middle-font">
+				Sed ut <em>perspiciatis unde omnis iste</em> natus error sit voluptatem accusantium doloremque laudantium, totam
+				rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+				Nemo
+				enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+				qui
+				ratione voluptatem sequi nesciunt. <strong>Neque porro</strong> quisquam est, qui dolorem ipsum quia dolor sit
+				amet,
+				consectetur, adipisci velit, sed quia non numquam
+				<ins>eius</ins>
+				modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+				voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
+				aliquid ex ea commodi consequatur?
+				<del>Quis autem</del>
+				vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+				molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+			</p>
+			<br />
+			<p id="small-font">
+				But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
+				will
+				give you a complete account of the system, and expound the actual teachings of the great explorer of the truth,
+				the
+				master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure,
+				but
+				because those who do not know how to pursue pleasure rationally encounter consequences that are extremely
+				painful.
+				Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but
+				because
+				occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial
+				example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But
+				who
+				has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one
+				who
+				avoids a pain that produces no resultant pleasure?
+			</p>
+		</div>
 		<abbr title="Apple Co">AC</abbr>
 	</div>
 	<div id="controls" class="logicalBlock">
@@ -100,6 +110,7 @@
 		<p class="itemsRow">
 			<a href="https://www.apple.com/airpods-pro/">AirPods</a>
 			<a href="https://www.apple.com/iphone/">iPhone</a>
+			<a style="color: indianred" href="https://www.gov.ua/"><b>GovUA</b></a>
 		</p>
 	</div>
 	<div id="documents" class="logicalBlock">
@@ -123,10 +134,10 @@
 			Послуги
 		</h3>
 		<ul>
-			<li>Selling iPhones</li>
-			<li>Selling iPods</li>
-			<li>Selling iPads</li>
-			<li>Selling MacBooks</li>
+			<li class="service1">Selling iPhones</li>
+			<li class="service2">Selling iPods</li>
+			<li class="service3">Selling iPads</li>
+			<li class="service4">Selling MacBooks</li>
 		</ul>
 	</div>
 	<div id="clients" class="logicalBlock">
@@ -145,10 +156,10 @@
 			Послуги (детально)
 		</h3>
 		<dl>
-			<dt>Selling MacBooks</dt>
-			<dd>Pro, Air</dd>
-			<dt>Selling iPhones</dt>
-			<dd>XS, XL, 11</dd>
+			<dt style="color: yellow; background: darkcyan">Selling MacBooks</dt>
+			<dd style="color: darkcyan; background: yellow">Pro, Air</dd>
+			<dt style="color: aqua; background: brown">Selling iPhones</dt>
+			<dd style="color: brown; background: aqua">XS, XL, 11</dd>
 		</dl>
 	</div>
 	<div id="finances" class="logicalBlock">
@@ -204,6 +215,21 @@
 			</tr>
 			</tbody>
 		</table>
+	</div>
+	<div class="logicalBlock">
+		<div>
+			<canvas id="canvas" width="500" height="300" border="1px"></canvas>
+		</div>
+		<div>
+			<audio controls>
+				<source src="files/lionking.mp3" type="audio/mp3">
+			</audio>
+		</div>
+		<div>
+			<video controls>
+				<source src="files/lionking.mp4" type="audio/mp3">
+			</video>
+		</div>
 	</div>
 	<div id="contacts" class="logicalBlock">
 		<h3>
