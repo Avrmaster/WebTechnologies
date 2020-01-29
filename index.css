@@ -15,6 +15,15 @@
   margin: 0 10px;
 }
 
+.navigation {
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation > * {
+  margin: 0 10px;
+}
+
 .logicalBlock {
   display: flex;
   flex-direction: column;

@@ -8,8 +8,8 @@
 	<link type="text/css" rel="stylesheet" href="index.css" />
 </head>
 <body>
-<div class="container">
-	<div class="logicalBlock">
+<div id="main" class="container">
+	<div id="weAre" class="logicalBlock">
 		<h1>
 			Apple
 		</h1>
@@ -27,9 +27,31 @@
 			We can sell even a cucumber for $2000
 		</blockquote>
 	</div>
+	<nav>
+		<ul class="navigation">
+			<li><a href="#about">Про нас</a></li>
+			<li><a href="#controls">Контролюючі органи</a></li>
+			<li><a href="#documents">Установчі документи</a></li>
+			<li><a href="#services">Послуги</a></li>
+			<li><a href="#clients">Наші замовники</a></li>
+			<li><a href="#servicesDetails">Послуги (детально)</a></li>
+			<li><a href="#finances">Фінансові Показники</a></li>
+			<li><a href="#contacts">Контакти</a></li>
+		</ul>
+	</nav>
 	<div class="logicalBlock">
+		<div>
+			<iframe src="https://www.epam-group.ru/" width="200"></iframe>
+			<p>Браузер не підтримує елементи HTML5</p>
+		</div>
+		<figure>
+			<img src="images/tree.jpeg" alt="The Apple Tree" width="200" height="200">
+			<figcaption>Яблуко</figcaption>
+		</figure>
+	</div>
+	<div id="about" class="logicalBlock">
 		<h3>
-			About us.
+			Про нас
 		</h3>
 		<p>
 			<b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry.
@@ -71,7 +93,7 @@
 		</p>
 		<abbr title="Apple Co">AC</abbr>
 	</div>
-	<div class="logicalBlock">
+	<div id="controls" class="logicalBlock">
 		<h3>
 			Контролюючі органи
 		</h3>
@@ -80,7 +102,7 @@
 			<a href="https://www.apple.com/iphone/">iPhone</a>
 		</p>
 	</div>
-	<div class="logicalBlock">
+	<div id="documents" class="logicalBlock">
 		<h3>
 			Установчі документи
 		</h3>
@@ -90,7 +112,13 @@
 			<a href="files/file3.txt">Сертифікат</a>
 		</p>
 	</div>
-	<div class="logicalBlock">
+	<div id="services" class="logicalBlock">
+		<p>
+			Час роботи:
+			<time datetime="08:00">8:00</time>
+			-
+			<time datetime="20:00">20:00</time>
+		</p>
 		<h3>
 			Послуги
 		</h3>
@@ -101,7 +129,7 @@
 			<li>Selling MacBooks</li>
 		</ul>
 	</div>
-	<div class="logicalBlock">
+	<div id="clients" class="logicalBlock">
 		<h3>
 			Наші замовники
 		</h3>
@@ -112,7 +140,7 @@
 			<li>Old ladies</li>
 		</ol>
 	</div>
-	<div class="logicalBlock">
+	<div id="servicesDetails" class="logicalBlock">
 		<h3>
 			Послуги (детально)
 		</h3>
@@ -123,7 +151,7 @@
 			<dd>XS, XL, 11</dd>
 		</dl>
 	</div>
-	<div class="logicalBlock">
+	<div id="finances" class="logicalBlock">
 		<h3>
 			Фінансові Показники
 		</h3>
@@ -131,10 +159,10 @@
 			<caption>Таблиця з фінансовими показниками</caption>
 			<thead>
 			<tr>
-				<th colspan="2">Місяць</th>
-				<th colspan="2">Доходи</th>
-				<th colspan="2">Витрати</th>
-				<th colspan="2">Прибуток</th>
+				<th colspan="1">Місяць</th>
+				<th colspan="1">Доходи</th>
+				<th colspan="1">Витрати</th>
+				<th colspan="1">Прибуток</th>
 			</tr>
 			</thead>
 			<tbody>
@@ -177,14 +205,101 @@
 			</tbody>
 		</table>
 	</div>
-	<div class="logicalBlock">
+	<div id="contacts" class="logicalBlock">
 		<h3>
 			Контакти
 		</h3>
+		<form accept-charset="UTF-8">
+			<fieldset>
+				<legend>Заповніть форму нижче</legend>
+				<label>
+					Ім'я
+					<input type="text" name="first_name" placeholder="Ім'я" maxlength="15" autofocus tabindex="0">
+				</label>
+				<label>
+					Прізвище
+					<input type="text" name="last_name" placeholder="Прізвище" maxlength="25" tabindex="1" required>
+				</label>
+				<label>
+					По-батькові
+					<input type="text" name="middle_name" placeholder="По-батькові" maxlength="25" disabled>
+				</label>
+				<label>
+					Місце роботи
+					<input type="text" name="workplace" placeholder="Місце роботи" maxlength="25" readonly>
+				</label>
+
+				<p>Тип запиту</p>
+				<label>
+					технічна підтримка
+					<input type="radio" name="request_type" value="tech-support" checked tabindex="3">
+				</label>
+				<label>
+					підтримка користувача
+					<input type="radio" name="request_type" value="customer-support">
+				</label>
+				<label>
+					інше
+					<input type="radio" name="request_type" value="other">
+				</label>
+				<label>
+					Категорія користувача
+					<select name="user_category">
+						<option value="guest" selected>гість</option>
+						<option value="registered">зареєстрований</option>
+						<option value="premium">преміум-користувач</option>
+					</select>
+				</label>
+				<label>
+					Текст запиту
+					<textarea name="request-text" cols="30" rows="10" placeholder="Текст запиту" tabindex="2"></textarea>
+				</label>
+				<label>
+					Дата запиту
+					<input type="date" name="request-date">
+				</label>
+				<label>
+					Вкладення
+					<input type="file" name="file">
+				</label>
+				<label>
+					Стаж користувача
+					<input type="number" name="user-experience" placeholder="Стаж користувача" min="0" max="50">
+				</label>
+				<label>
+					Країна
+					<input type="text" name="country" pattern="[A-Za-z]{3}">
+				</label>
+				<label>
+					Email
+					<input type="email" name="email">
+				</label>
+				<label>
+					Пріоритетність запиту
+					<input type="color" name="priority" value="#00ff00">
+				</label>
+				<label>
+					Веб-сторінка
+					<input type="url" name="web-page">
+				</label>
+				<div>
+					<p contenteditable="true">Абзац тексту, який можна редагувати</p>
+				</div>
+				<input type="submit" value="Надіслати запит">
+			</fieldset>
+		</form>
+		<details>
+			<summary>&copy; Леськів Олександр, 2020</summary>
+			<p>
+				- All Rights Reserved.
+			</p>
+			<p>
+				Створено за допомогою
+				<mark>Vanilla JS</mark>
+				сумним вечором у антоновичах
+			</p>
+		</details>
 		<a href="mailto:oleksandr.leskiv@digia.co">Напишіть нам</a>
-		<small>
-			&copy; Леськів Олександр, 2020
-		</small>
 	</div>
 </div>
 </body>

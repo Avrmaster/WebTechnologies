@@ -1,0 +1,23 @@
+Error: The width attribute on the table element is obsolete. Use CSS instead.
+
+From line 158, column 3; to line 158, column 32
+
+		</h3>↩		<table width="500" border="1">↩			<c
+
+Error: The border attribute on the table element is obsolete. Use CSS instead.
+
+From line 158, column 3; to line 158, column 32
+
+		</h3>↩		<table width="500" border="1">↩			<c
+
+Warning: The date input type is not supported in all browsers. Please be sure to test, and consider using a polyfill.
+
+From line 259, column 6; to line 259, column 44
+
+питу↩					<input type="date" name="request-date">↩				<
+
+Warning: The color input type is not supported in all browsers. Please be sure to test, and consider using a polyfill.
+
+From line 279, column 6; to line 279, column 57
+
+питу↩					<input type="color" name="priority" value="#00ff00">↩
