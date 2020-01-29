@@ -25,11 +25,6 @@ h3 {
   margin: 0 10px;
 }
 
-.navigation {
-  display: flex;
-  flex-direction: row;
-}
-
 .navigation > * {
   margin: 0 10px;
 }
@@ -129,4 +124,155 @@ h3 {
 #clients {
   border: 5px solid #3375fd;
   box-shadow: 9px 8px 5px 0 #ffef13;
+}
+
+.bigRow {
+  align-self: stretch;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.bigRow > * {
+  flex: 1;
+}
+
+.div-overflow {
+  padding: 20px;
+  margin: 20px 200px;
+  border: 1px solid black;
+
+  height: 200px;
+  overflow-y: scroll;
+  align-self: stretch;
+}
+
+.withBackgroundImage {
+  padding: 30px;
+  margin: 30px 120px;
+  border: 2px solid red;
+
+  background: url("../images/squarepants.jpg") center;
+}
+
+.newspaper {
+  padding: 25px;
+  margin: 25px 40px;
+  border: 1px solid green;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.newspaper > p {
+  flex: 1;
+  margin: 0 10px;
+  text-align: justify;
+}
+
+.specialFont {
+  padding: 10px;
+  margin: 35px 45px;
+  border: 2px solid yellow;
+
+  font-family: 'Sigmar One', cursive;
+  text-align: justify;
+  max-width: 500px;
+  align-self: center;
+}
+
+.specialFont > p {
+  margin: 0;
+}
+
+.specialFont > img {
+  float: right;
+
+  width: 200px;
+  height: 200px;
+  margin-left: 30px;
+}
+
+.textShadow {
+  text-shadow: 3px 3px 2px white;
+}
+
+.numberBlocks {
+  padding: 10px;
+  margin: 35px 45px;
+  border: 1px dashed #ff00FF;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.numberBlocks > * {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.number1 {
+  background: #2eaf54;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.number2 {
+  color: blue;
+  background: url("../images/Apple.jpg") center repeat;
+  background-size: 50px 50px;
+}
+
+.number3 {
+  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(190, 119, 174, 1) 51%, rgba(253, 187, 45, 1) 100%);
+}
+
+.transforms > * {
+  transition: 300ms ease;
+}
+
+.translate {
+  padding: 20px;
+  margin: 15px 45px;
+  border: 1px dashed #a3ffa4;
+}
+
+.translate:hover {
+  transform: translate(20px, 20px);
+}
+
+.rotating {
+  padding: 10px;
+  margin: 20px 45px;
+  border: 2px solid #8e82ff;
+}
+
+.rotating:hover {
+  transform: rotate(5deg);
+}
+
+.scale {
+  padding: 15px;
+  margin: 35px 45px;
+  border: 3px solid #f5ff75;
+}
+
+.scale:hover {
+  transform: scale(1.4);
+}
+
+.changingBackground {
+  background: #ff00FF;
+  width: 400px;
+  height: 400px;
+  transition: 400ms ease;
+}
+
+.changingBackground:hover {
+  background: #80ff5a;
+  width: 200px;
+  margin: 0 100px;
 }
