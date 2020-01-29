@@ -5,7 +5,7 @@
 	<title>Apple Co</title>
 	<!--    -->
 
-	<link type="text/css" rel="stylesheet" href="css/index.css" />
+	<link type="text/css" rel="stylesheet" href="scss/index.css" />
 	<link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -28,8 +28,8 @@
 			We can sell even a cucumber for $2000
 		</blockquote>
 	</div>
-	<div class="bigRow">
-		<nav class="logicalBlock navigationBlock">
+	<div class="logicalBlock bigRow">
+		<nav class="logicalBlock">
 			<ul class="navigation">
 				<li><a href="#about">Про нас</a></li>
 				<li><a href="#controls">Контролюючі органи</a></li>
@@ -45,39 +45,35 @@
 			<h3>
 				Контролюючі органи
 			</h3>
-			<p class="itemsRow">
+			<p class="itemsContainer">
 				<a href="https://www.apple.com/airpods-pro/">AirPods</a>
 				<a href="https://www.apple.com/iphone/">iPhone</a>
-				<a style="color: indianred" href="https://www.gov.ua/"><b>GovUA</b></a>
+				<a href="https://www.gov.ua/"><b>GovUA</b></a>
 			</p>
 		</div>
 		<div id="documents" class="logicalBlock">
 			<h3>
 				Установчі документи
 			</h3>
-			<p class="itemsRow">
+			<p class="itemsContainer">
 				<a href="files/file1.txt">Статут</a>
 				<a href="files/file2.txt">Договір</a>
 				<a href="files/file3.txt">Сертифікат</a>
 			</p>
 		</div>
 	</div>
-	<div class="bigRow">
-		<div class="logicalBlock">
-			<div>
-				<iframe src="https://www.epam-group.ru/" width="200"></iframe>
-				<p>Браузер не підтримує елементи HTML5</p>
-			</div>
-			<figure>
-				<img src="images/tree.jpeg" alt="The Apple Tree" width="200" height="200">
-				<figcaption>Яблуко</figcaption>
-			</figure>
+	<div id="iframeVideo" class="logicalBlock bigRow">
+		<div>
+			<iframe src="https://www.epam-group.ru" width="200"></iframe>
+			<p>Браузер не підтримує елементи HTML5</p>
 		</div>
-		<div class="logicalBlock">
-			<video controls>
-				<source src="files/lionking.mp4" type="audio/mp3">
-			</video>
-		</div>
+		<figure>
+			<img src="images/tree.jpeg" alt="The Apple Tree" width="200" height="200">
+			<figcaption>Яблуко :)</figcaption>
+		</figure>
+		<video controls>
+			<source src="files/lionking.mp4" type="audio/mp3">
+		</video>
 	</div>
 	<div id="about" class="logicalBlock">
 		<h3>
@@ -168,10 +164,10 @@
 			Послуги (детально)
 		</h3>
 		<dl>
-			<dt style="color: yellow; background: darkcyan">Selling MacBooks</dt>
-			<dd style="color: darkcyan; background: yellow">Pro, Air</dd>
-			<dt style="color: aqua; background: brown">Selling iPhones</dt>
-			<dd style="color: brown; background: aqua">XS, XL, 11</dd>
+			<dt>Selling MacBooks</dt>
+			<dd>Pro, Air</dd>
+			<dt>Selling iPhones</dt>
+			<dd>XS, XL, 11</dd>
 		</dl>
 	</div>
 	<div id="finances" class="logicalBlock">
@@ -319,6 +315,8 @@
 					<p contenteditable="true">Абзац тексту, який можна редагувати</p>
 				</div>
 				<input type="submit" value="Надіслати запит">
+				<button class="form-button" disabled>Відміна</button>
+				<button class="form-button">Зберегти</button>
 			</fieldset>
 		</form>
 		<details>
@@ -334,7 +332,6 @@
 		</details>
 		<a href="mailto:oleksandr.leskiv@digia.co">Напишіть нам</a>
 	</div>
-
 	<div class="logicalBlock">
 		<div class="div-overflow">
 			The standard Lorem Ipsum passage, used since the 1500s
@@ -532,7 +529,6 @@
 			</p>
 		</div>
 	</div>
-
 	<div class="logicalBlock">
 		<h3 class="textShadow">
 			Текстова Тінь
@@ -577,7 +573,9 @@
 				"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
 				will give you a complete account of the system, and expound the actual teachings of the great explorer of the
 				truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is
-				extremely painful. Nor again is there anyone <b>ROTATE</b> loves or pursues or desires to obtain pain of itself, because
+				extremely painful. Nor again is there anyone <b>TRANSLATE</b> loves or pursues or desires to obtain pain of
+				itself,
+				because
 				it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great
 				pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain
 				some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has
@@ -587,7 +585,8 @@
 				"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
 				will give you a complete account of the system, and expound the actual teachings of the great explorer of the
 				pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are
-				extremely painful. Nor again is there anyone <b>SCALE</b> loves or pursues or desires to obtain pain of itself, because
+				extremely painful. Nor again is there anyone <b>ROTATE</b> loves or pursues or desires to obtain pain of itself,
+				because
 				it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great
 				pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain
 				some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has
@@ -597,7 +596,8 @@
 				"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
 				will give you a complete account of the system, and expound the actual teachings of the great explorer of the
 				pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are
-				extremely painful. Nor again is there anyone <b>SCALE</b> loves or pursues or desires to obtain pain of itself, because
+				extremely painful. Nor again is there anyone <b>SCALE</b> loves or pursues or desires to obtain pain of itself,
+				because
 				it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great
 				pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain
 				some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has
@@ -607,6 +607,40 @@
 		<div class="logicalBlock changingBackground">
 
 		</div>
+	</div>
+	<div class="logicalBlock gallery">
+		<div class="kitten kitten-1">
+			<h4>Kitten 1</h4>
+			<p>
+				But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
+				will give you a complete account of the system, and expound the actual teachings of the great explorer of the
+				truth, the master-builder of human happiness.
+			</p>
+		</div>
+		<div class="kitten kitten-2">
+			<h4>Kitten 2</h4>
+			<p>
+				But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
+				will give you a complete account of the system, and expound the actual teachings of the great explorer of the
+				truth, the master-builder of human happiness.
+			</p>
+		</div>
+		<div class="kitten kitten-3">
+			<h4>Kitten 3</h4>
+			<p>
+				But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
+				will give you a complete account of the system, and expound the actual teachings of the great explorer of the
+				truth, the master-builder of human happiness.
+			</p>
+		</div>
+		<div class="kitten kitten-4"></div>
+		<div class="kitten kitten-5"></div>
+		<div class="kitten kitten-6"></div>
+	</div>
+	<div class="logicalBlock">
+		<div class="class-1"></div>
+		<div class="class-2"></div>
+		<div class="class-3"></div>
 	</div>
 </div>
 </body>
