@@ -6,641 +6,303 @@
 	<!--    -->
 
 	<link type="text/css" rel="stylesheet" href="scss/index.css" />
+	<script src="js/index.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
 </head>
 <body>
 <div id="main" class="container">
-	<div id="weAre" class="logicalBlock">
+	<div class="logicalBlock">
 		<h1>
-			Apple
+			Lab 06. Variant 7.
 		</h1>
-		<img
-				src="images/Apple.jpg"
-				alt="Apple image"
-				width="1024"
-				height="556"
-		/>
-		<h2>
-			We are Gods of technologies
-		</h2>
-		<hr />
-		<blockquote>
-			We can sell even a cucumber for $2000
-		</blockquote>
-	</div>
-	<div class="logicalBlock bigRow">
-		<nav class="logicalBlock">
-			<ul class="navigation">
-				<li><a href="#about">Про нас</a></li>
-				<li><a href="#controls">Контролюючі органи</a></li>
-				<li><a href="#documents">Установчі документи</a></li>
-				<li><a href="#services">Послуги</a></li>
-				<li><a href="#clients">Наші замовники</a></li>
-				<li><a href="#servicesDetails">Послуги (детально)</a></li>
-				<li><a href="#finances">Фінансові Показники</a></li>
-				<li><a href="#contacts">Контакти</a></li>
-			</ul>
-		</nav>
-		<div id="controls" class="logicalBlock">
-			<h3>
-				Контролюючі органи
-			</h3>
-			<p class="itemsContainer">
-				<a href="https://www.apple.com/airpods-pro/">AirPods</a>
-				<a href="https://www.apple.com/iphone/">iPhone</a>
-				<a href="https://www.gov.ua/"><b>GovUA</b></a>
-			</p>
-		</div>
-		<div id="documents" class="logicalBlock">
-			<h3>
-				Установчі документи
-			</h3>
-			<p class="itemsContainer">
-				<a href="files/file1.txt">Статут</a>
-				<a href="files/file2.txt">Договір</a>
-				<a href="files/file3.txt">Сертифікат</a>
-			</p>
-		</div>
-	</div>
-	<div id="iframeVideo" class="logicalBlock bigRow">
-		<div>
-			<iframe src="https://www.epam-group.ru" width="200"></iframe>
-			<p>Браузер не підтримує елементи HTML5</p>
-		</div>
-		<figure>
-			<img src="images/tree.jpeg" alt="The Apple Tree" width="200" height="200">
-			<figcaption>Яблуко :)</figcaption>
-		</figure>
-		<video controls>
-			<source src="files/lionking.mp4" type="audio/mp3">
-		</video>
-	</div>
-	<div id="about" class="logicalBlock">
-		<h3>
-			Про нас
-		</h3>
-		<div>
-			<p class="large-font">
-				<b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry.
-				Lorem Ipsum has been the industry's standard <sup>dummy text</sup> ever since the 1500s,
-				when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-				Contrary to popular belief, <i>Lorem Ipsum</i> is not simply random text.
-				It has roots in a piece of classical Latin literature from <sub>45 BC</sub>, making it over 2000 years old.
-				There are many variations of passages of <u>Lorem Ipsum</u> available, but the majority have suffered
-				alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-			</p>
-			<br />
-			<p class="middle-font">
-				Sed ut <em>perspiciatis unde omnis iste</em> natus error sit voluptatem accusantium doloremque laudantium, totam
-				rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-				Nemo
-				enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-				qui
-				ratione voluptatem sequi nesciunt. <strong>Neque porro</strong> quisquam est, qui dolorem ipsum quia dolor sit
-				amet,
-				consectetur, adipisci velit, sed quia non numquam
-				<ins>eius</ins>
-				modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-				voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-				aliquid ex ea commodi consequatur?
-				<del>Quis autem</del>
-				vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
-				molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
-			</p>
-			<br />
-			<p id="small-font">
-				But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
-				will
-				give you a complete account of the system, and expound the actual teachings of the great explorer of the truth,
-				the
-				master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure,
-				but
-				because those who do not know how to pursue pleasure rationally encounter consequences that are extremely
-				painful.
-				Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but
-				because
-				occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial
-				example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But
-				who
-				has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one
-				who
-				avoids a pain that produces no resultant pleasure?
-			</p>
-		</div>
-		<abbr title="Apple Co">AC</abbr>
-	</div>
-	<div class="bigRow">
-		<div id="services" class="logicalBlock">
-			<p>
-				Час роботи:
-				<time datetime="08:00">8:00</time>
-				-
-				<time datetime="20:00">20:00</time>
-			</p>
-			<h3>
-				Послуги
-			</h3>
-			<ul>
-				<li class="service1">Selling iPhones</li>
-				<li class="service2">Selling iPods</li>
-				<li class="service3">Selling iPads</li>
-				<li class="service4">Selling MacBooks</li>
-			</ul>
-		</div>
-		<div id="clients" class="logicalBlock">
-			<h3>
-				Наші замовники
-			</h3>
-			<ol>
-				<li>Dads</li>
-				<li>Boyfriends</li>
-				<li>Students</li>
-				<li>Old ladies</li>
-			</ol>
-		</div>
-	</div>
-	<div id="servicesDetails" class="logicalBlock">
-		<h3>
-			Послуги (детально)
-		</h3>
-		<dl>
-			<dt>Selling MacBooks</dt>
-			<dd>Pro, Air</dd>
-			<dt>Selling iPhones</dt>
-			<dd>XS, XL, 11</dd>
-		</dl>
-	</div>
-	<div id="finances" class="logicalBlock">
-		<h3>
-			Фінансові Показники
-		</h3>
-		<table width="500" border="1">
-			<caption>Таблиця з фінансовими показниками</caption>
-			<thead>
-			<tr>
-				<th colspan="1">Місяць</th>
-				<th colspan="1">Доходи</th>
-				<th colspan="1">Витрати</th>
-				<th colspan="1">Прибуток</th>
-			</tr>
-			</thead>
-			<tbody>
-			<tr>
-				<td>Січень</td>
-				<td>1000</td>
-				<td>300</td>
-				<td>700</td>
-			</tr>
-			<tr>
-				<td>Лютий</td>
-				<td>1500</td>
-				<td>500</td>
-				<td>1000</td>
-			</tr>
-			<tr>
-				<td>Березень</td>
-				<td>700</td>
-				<td>200</td>
-				<td>500</td>
-			</tr>
-			<tr>
-				<td>Квітень</td>
-				<td>1200</td>
-				<td>300</td>
-				<td>900</td>
-			</tr>
-			<tr>
-				<td>Травень</td>
-				<td>1100</td>
-				<td>400</td>
-				<td>700</td>
-			</tr>
-			<tr>
-				<td>Червень</td>
-				<td>1400</td>
-				<td>300</td>
-				<td>1100</td>
-			</tr>
-			</tbody>
-		</table>
 	</div>
 	<div class="logicalBlock">
-		<div>
-			<canvas id="canvas" width="500" height="300" border="1px"></canvas>
-		</div>
-		<div>
-			<audio controls>
-				<source src="files/lionking.mp3" type="audio/mp3">
-			</audio>
-		</div>
-	</div>
-	<div id="contacts" class="logicalBlock">
 		<h3>
-			Контакти
+			Task 1. WordIndex
 		</h3>
-		<form accept-charset="UTF-8">
+		<form id="task1Form">
 			<fieldset>
-				<legend>Заповніть форму нижче</legend>
+				<legend>Input data</legend>
 				<label>
-					Ім'я
-					<input type="text" name="first_name" placeholder="Ім'я" maxlength="15" autofocus tabindex="0">
+					Input string
+					<input
+							id="task1Input"
+							type="text"
+							name="input"
+							placeholder="input string..."
+							required
+					>
 				</label>
 				<label>
-					Прізвище
-					<input type="text" name="last_name" placeholder="Прізвище" maxlength="25" tabindex="1" required>
+					Index
+					<input
+							id="task1Index"
+							type="number"
+							name="index"
+							placeholder="search index..."
+							required
+							min="0"
+					>
 				</label>
-				<label>
-					По-батькові
-					<input type="text" name="middle_name" placeholder="По-батькові" maxlength="25" disabled>
-				</label>
-				<label>
-					Місце роботи
-					<input type="text" name="workplace" placeholder="Місце роботи" maxlength="25" readonly>
-				</label>
-
-				<p>Тип запиту</p>
-				<label>
-					технічна підтримка
-					<input type="radio" name="request_type" value="tech-support" checked tabindex="3">
-				</label>
-				<label>
-					підтримка користувача
-					<input type="radio" name="request_type" value="customer-support">
-				</label>
-				<label>
-					інше
-					<input type="radio" name="request_type" value="other">
-				</label>
-				<label>
-					Категорія користувача
-					<select name="user_category">
-						<option value="guest" selected>гість</option>
-						<option value="registered">зареєстрований</option>
-						<option value="premium">преміум-користувач</option>
-					</select>
-				</label>
-				<label>
-					Текст запиту
-					<textarea name="request-text" cols="30" rows="10" placeholder="Текст запиту" tabindex="2"></textarea>
-				</label>
-				<label>
-					Дата запиту
-					<input type="date" name="request-date">
-				</label>
-				<label>
-					Вкладення
-					<input type="file" name="file">
-				</label>
-				<label>
-					Стаж користувача
-					<input type="number" name="user-experience" placeholder="Стаж користувача" min="0" max="50">
-				</label>
-				<label>
-					Країна
-					<input type="text" name="country" pattern="[A-Za-z]{3}">
-				</label>
-				<label>
-					Email
-					<input type="email" name="email">
-				</label>
-				<label>
-					Пріоритетність запиту
-					<input type="color" name="priority" value="#00ff00">
-				</label>
-				<label>
-					Веб-сторінка
-					<input type="url" name="web-page">
-				</label>
-				<div>
-					<p contenteditable="true">Абзац тексту, який можна редагувати</p>
+				<div class="submitHolder">
+					<input
+							type="submit"
+							value="Find"
+					>
 				</div>
-				<input type="submit" value="Надіслати запит">
-				<button class="form-button" disabled>Відміна</button>
-				<button class="form-button">Зберегти</button>
 			</fieldset>
 		</form>
-		<details>
-			<summary>&copy; Леськів Олександр, 2020</summary>
-			<p>
-				- All Rights Reserved.
-			</p>
-			<p>
-				Створено за допомогою
-				<mark>Vanilla JS</mark>
-				сумним вечором у антоновичах
-			</p>
-		</details>
-		<a href="mailto:oleksandr.leskiv@digia.co">Напишіть нам</a>
+		<p id="task1Result">
+		</p>
 	</div>
 	<div class="logicalBlock">
-		<div class="div-overflow">
-			The standard Lorem Ipsum passage, used since the 1500s
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-			magna
-			aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat.
-			Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-			sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-
-			Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
-			"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-			aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
-			enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
-			ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-			adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-			voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-			aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
-			molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-
-			1914 translation by H. Rackham
-			"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will
-			give you a complete account of the system, and expound the actual teachings of the great explorer of the truth,
-			the
-			master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure,
-			but
-			because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
-			Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but
-			because
-			occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial
-			example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who
-			has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one
-			who
-			avoids a pain that produces no resultant pleasure?"
-
-			Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
-			"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
-			corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa
-			qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
-			distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
-			placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut
-			officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non
-			recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias
-			consequatur aut perferendis doloribus asperiores repellat."
-
-			1914 translation by H. Rackham
-			"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by
-			the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are
-			bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the
-			same
-			as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a
-			free
-			hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best,
-			every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of
-			duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances
-			accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects
-			pleasures
-			to secure other greater pleasures, or else he endures pains to avoid worse pains."
-		</div>
-		<div class="div-overflow withBackgroundImage">
-			The standard Lorem Ipsum passage, used since the 1500s
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-			magna
-			aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat.
-			Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-			sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-
-			Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
-			"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-			aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
-			enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
-			ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-			adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-			voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-			aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
-			molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-
-			1914 translation by H. Rackham
-			"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will
-			give you a complete account of the system, and expound the actual teachings of the great explorer of the truth,
-			the
-			master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure,
-			but
-			because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
-			Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but
-			because
-			occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial
-			example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who
-			has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one
-			who
-			avoids a pain that produces no resultant pleasure?"
-
-			Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
-			"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
-			corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa
-			qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita
-			distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
-			placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut
-			officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non
-			recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias
-			consequatur aut perferendis doloribus asperiores repellat."
-
-			1914 translation by H. Rackham
-			"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by
-			the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are
-			bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the
-			same
-			as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a
-			free
-			hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best,
-			every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of
-			duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances
-			accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects
-			pleasures
-			to secure other greater pleasures, or else he endures pains to avoid worse pains."
-		</div>
-		<div class="newspaper">
-			<p>
-				Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
-				"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-				aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
-				enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-				qui
-				ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-				adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-				voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-				aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
-				nihil
-				molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-			</p>
-			<p>
-				1914 translation by H. Rackham
-				"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
-				will
-				give you a complete account of the system, and expound the actual teachings of the great explorer of the truth,
-				the
-				master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure,
-				but
-				because those who do not know how to pursue pleasure rationally encounter consequences that are extremely
-				painful.
-				Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but
-				because
-				occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial
-				example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But
-				who
-				has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one
-				who
-				avoids a pain that produces no resultant pleasure?"
-			</p>
-			<p>
-				Section 1.10.33 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
-				"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque
-				corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in
-				culpa
-				qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et
-				expedita
-				distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
-				maxime
-				placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et
-				aut
-				officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non
-				recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias
-				consequatur aut perferendis doloribus asperiores repellat."
-			</p>
-			<p>
-				1914 translation by H. Rackham
-				"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized
-				by
-				the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that
-				are
-				bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the
-				same
-				as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a
-				free
-				hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best,
-				every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of
-				duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances
-				accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects
-				pleasures
-				to secure other greater pleasures, or else he endures pains to avoid worse pains."
-			</p>
-		</div>
-		<div class="specialFont">
-			<img src="images/squarepants.jpg" alt="squarepantws">
-			<p>
-				1914 translation by H. Rackham
-				"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized
-				by
-				the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that
-				are
-				bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the
-				same
-				as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish.
-			</p>
-		</div>
-	</div>
-	<div class="logicalBlock">
-		<h3 class="textShadow">
-			Текстова Тінь
+		<h3>
+			Task 2. Medians
 		</h3>
-		<div class="numberBlocks">
-			<div class="number1">
-				"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
-				will give you a complete account of the system, and expound the actual teachings of the great explorer of the
-				truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is
-				pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are
-				extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because
-				it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great
-				pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain
-				some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has
-				no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
-			</div>
-			<div class="number2">
-				"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
-				will give you a complete account of the system, and expound the actual teachings of the great explorer of the
-				truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is
-				pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are
-				extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because
-				it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great
-				pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain
-				some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has
-				no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
-			</div>
-			<div class="number3">
-				"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
-				will give you a complete account of the system, and expound the actual teachings of the great explorer of the
-				truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is
-				pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are
-				extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because
-				it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great
-				pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain
-				some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has
-				no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
-			</div>
-		</div>
-		<div class="logicalBlock transforms">
-			<div class="translate">
-				"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
-				will give you a complete account of the system, and expound the actual teachings of the great explorer of the
-				truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is
-				extremely painful. Nor again is there anyone <b>TRANSLATE</b> loves or pursues or desires to obtain pain of
-				itself,
-				because
-				it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great
-				pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain
-				some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has
-				no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
-			</div>
-			<div class="rotating">
-				"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
-				will give you a complete account of the system, and expound the actual teachings of the great explorer of the
-				pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are
-				extremely painful. Nor again is there anyone <b>ROTATE</b> loves or pursues or desires to obtain pain of itself,
-				because
-				it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great
-				pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain
-				some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has
-				no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
-			</div>
-			<div class="scale">
-				"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
-				will give you a complete account of the system, and expound the actual teachings of the great explorer of the
-				pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are
-				extremely painful. Nor again is there anyone <b>SCALE</b> loves or pursues or desires to obtain pain of itself,
-				because
-				it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great
-				pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain
-				some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has
-				no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
-			</div>
-		</div>
-		<div class="logicalBlock changingBackground">
-
-		</div>
-	</div>
-	<div class="logicalBlock gallery">
-		<div class="kitten kitten-1">
-			<h4>Kitten 1</h4>
-			<p>
-				But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
-				will give you a complete account of the system, and expound the actual teachings of the great explorer of the
-				truth, the master-builder of human happiness.
-			</p>
-		</div>
-		<div class="kitten kitten-2">
-			<h4>Kitten 2</h4>
-			<p>
-				But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
-				will give you a complete account of the system, and expound the actual teachings of the great explorer of the
-				truth, the master-builder of human happiness.
-			</p>
-		</div>
-		<div class="kitten kitten-3">
-			<h4>Kitten 3</h4>
-			<p>
-				But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
-				will give you a complete account of the system, and expound the actual teachings of the great explorer of the
-				truth, the master-builder of human happiness.
-			</p>
-		</div>
-		<div class="kitten kitten-4"></div>
-		<div class="kitten kitten-5"></div>
-		<div class="kitten kitten-6"></div>
+		<form id="task2Form">
+			<fieldset>
+				<legend>Input data</legend>
+				<label>
+					A
+					<input
+							id="task2A"
+							type="number"
+							step="0.001"
+							name="input"
+							placeholder="a"
+							required
+					>
+				</label>
+				<label>
+					B
+					<input
+							id="task2B"
+							type="number"
+							step="0.001"
+							name="index"
+							placeholder="b"
+							required
+					>
+				</label>
+				<div class="submitHolder">
+					<input
+							type="submit"
+							value="Calculate"
+					>
+				</div>
+			</fieldset>
+		</form>
+		<p id="task2Result">
+		</p>
 	</div>
 	<div class="logicalBlock">
-		<div class="class-1"></div>
-		<div class="class-2"></div>
-		<div class="class-3"></div>
+		<h3>
+			Task 3. Arccos
+		</h3>
+		<form id="task3Form">
+			<fieldset>
+				<legend>Input data</legend>
+				<label>
+					X
+					<input
+							id="task3X"
+							type="number"
+							name="input"
+							step="0.001"
+							placeholder="x..."
+							required
+							min="-1"
+							max="1"
+					>
+				</label>
+				<label>
+					N
+					<input
+							id="task3N"
+							type="number"
+							name="input"
+							placeholder="n..."
+							required
+							min="0"
+					>
+				</label>
+				<div class="submitHolder">
+					<input
+							type="submit"
+							value="Calculate"
+					>
+				</div>
+			</fieldset>
+		</form>
+		<p id="task3Result">
+		</p>
+	</div>
+	<div class="logicalBlock">
+		<h3>
+			Task 4. Equilateral Trapezoid
+		</h3>
+		<form id="task4Form">
+			<fieldset>
+				<legend>Input data</legend>
+				<label>
+					Top
+					<input
+							id="task4Top"
+							type="number"
+							name="input"
+							placeholder="Top..."
+							step="0.001"
+							required
+							min="0"
+					>
+				</label>
+				<label>
+					Bottom
+					<input
+							id="task4Bottom"
+							type="number"
+							name="input"
+							placeholder="Bottom..."
+							step="0.001"
+							required
+							min="0"
+					>
+				</label>
+				<label>
+					Side
+					<input
+							id="task4Side"
+							type="number"
+							name="input"
+							placeholder="Side..."
+							step="0.001"
+							required
+							min="0"
+					>
+				</label>
+				<div class="submitHolder">
+					<input
+							type="submit"
+							value="Calculate"
+					>
+				</div>
+			</fieldset>
+		</form>
+		<p id="task4Result">
+		</p>
+	</div>
+	<div class="logicalBlock">
+		<h3>
+			Task 5. Product
+		</h3>
+		<p id="task5AllProducts">
+		</p>
+		<form id="task5Form">
+			<fieldset>
+				<legend>Input data</legend>
+				<label>
+					Name
+					<input
+							id="task5Name"
+							type="text"
+							name="input"
+							placeholder="Name..."
+							required
+					>
+				</label>
+				<label>
+					Manufacturer
+					<input
+							id="task5Manufacturer"
+							type="text"
+							name="input"
+							placeholder="Manufacturer..."
+							required
+					>
+				</label>
+				<label>
+					Price
+					<input
+							id="task5Price"
+							type="number"
+							step="0.01"
+							name="input"
+							placeholder="Price..."
+							required
+					>
+				</label>
+				<label>
+					Expiration Date
+					<input
+							id="task5ExpirationDate"
+							type="date"
+							name="input"
+							required
+					>
+				</label>
+				<label>
+					Quantity
+					<input
+							id="task5Quantity"
+							type="number"
+							name="input"
+							placeholder="Quantity..."
+							required
+					>
+				</label>
+				<div class="submitHolder">
+					<input
+							type="submit"
+							value="Add"
+					>
+				</div>
+			</fieldset>
+		</form>
+
+		<h3>Find products</h3>
+		<form id="task5FilterForm">
+			<fieldset>
+				<legend>Filter data</legend>
+				<label>
+					Name
+					<input
+							id="task5FilterName"
+							type="text"
+							name="input"
+							placeholder="Name..."
+							required
+					>
+				</label>
+				<label>
+					Price
+					<input
+							id="task5FilterPrice"
+							type="number"
+							step="0.01"
+							name="input"
+							placeholder="Price..."
+							required
+					>
+				</label>
+				<label>
+					Expiration Date
+					<input
+							id="task5FilterExpirationDate"
+							type="date"
+							name="input"
+							required
+					>
+				</label>
+				<div class="submitHolder">
+					<input
+							type="submit"
+							value="Find"
+					>
+				</div>
+			</fieldset>
+		</form>
+		<p id="task5Result">
+		</p>
 	</div>
 </div>
 </body>
