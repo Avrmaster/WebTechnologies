@@ -3,13 +3,14 @@ window.onload = () => {
 		this.name = name
 		this.itemPrice = itemPrice
 		this.quantity = quantity
+		this.price = this.itemPrice * this.quantity
 
 		this.toString = () => {
 			return `
 				<th><i>${this.name}</i></th>
 				<th>$${(this.itemPrice / 100).toFixed(2)}</th>
 				<th>${this.quantity}</th>
-				<th>$${(this.itemPrice * this.quantity / 100).toFixed(2)}</th>
+				<th>$${(this.price / 100).toFixed(2)}</th>
 			`
 		}
 	}
@@ -28,6 +29,11 @@ window.onload = () => {
 				<th><b>Price</b></th>
 			</tr>
 				${mapProductsToString(products)}
+				${!products.length ? '<th colspan="4">- Nothing -</th>' : ''}
+			<tr>
+				<th colspan="3" id="total"><b>Total</b></th>
+				<th>$${(products.reduce((p, c) => p + c.price, 0) / 100).toFixed(2)}</th>
+			</tr>
 			</tbody>
 		`)
 	}
