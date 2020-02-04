@@ -13,197 +13,19 @@
 <div id="main" class="container">
 	<div class="logicalBlock">
 		<h1>
-			Lab 06. Variant 7.
+			Lab 07. Variant 7.
 		</h1>
 	</div>
 	<div class="logicalBlock">
-		<h3>
-			Task 1. WordIndex
-		</h3>
-		<form id="task1Form">
+		<table id="productsTable">
+		</table>
+		<form id="addForm">
 			<fieldset>
-				<legend>Input data</legend>
-				<label>
-					Input string
-					<input
-							id="task1Input"
-							type="text"
-							name="input"
-							placeholder="input string..."
-							required
-					>
-				</label>
-				<label>
-					Index
-					<input
-							id="task1Index"
-							type="number"
-							name="index"
-							placeholder="search index..."
-							required
-							min="0"
-					>
-				</label>
-				<div class="submitHolder">
-					<input
-							type="submit"
-							value="Find"
-					>
-				</div>
-			</fieldset>
-		</form>
-		<p id="task1Result">
-		</p>
-	</div>
-	<div class="logicalBlock">
-		<h3>
-			Task 2. Medians
-		</h3>
-		<form id="task2Form">
-			<fieldset>
-				<legend>Input data</legend>
-				<label>
-					A
-					<input
-							id="task2A"
-							type="number"
-							step="0.001"
-							name="input"
-							placeholder="a"
-							required
-					>
-				</label>
-				<label>
-					B
-					<input
-							id="task2B"
-							type="number"
-							step="0.001"
-							name="index"
-							placeholder="b"
-							required
-					>
-				</label>
-				<div class="submitHolder">
-					<input
-							type="submit"
-							value="Calculate"
-					>
-				</div>
-			</fieldset>
-		</form>
-		<p id="task2Result">
-		</p>
-	</div>
-	<div class="logicalBlock">
-		<h3>
-			Task 3. Arccos
-		</h3>
-		<form id="task3Form">
-			<fieldset>
-				<legend>Input data</legend>
-				<label>
-					X
-					<input
-							id="task3X"
-							type="number"
-							name="input"
-							step="0.001"
-							placeholder="x..."
-							required
-							min="-1"
-							max="1"
-					>
-				</label>
-				<label>
-					N
-					<input
-							id="task3N"
-							type="number"
-							name="input"
-							placeholder="n..."
-							required
-							min="0"
-					>
-				</label>
-				<div class="submitHolder">
-					<input
-							type="submit"
-							value="Calculate"
-					>
-				</div>
-			</fieldset>
-		</form>
-		<p id="task3Result">
-		</p>
-	</div>
-	<div class="logicalBlock">
-		<h3>
-			Task 4. Equilateral Trapezoid
-		</h3>
-		<form id="task4Form">
-			<fieldset>
-				<legend>Input data</legend>
-				<label>
-					Top
-					<input
-							id="task4Top"
-							type="number"
-							name="input"
-							placeholder="Top..."
-							step="0.001"
-							required
-							min="0"
-					>
-				</label>
-				<label>
-					Bottom
-					<input
-							id="task4Bottom"
-							type="number"
-							name="input"
-							placeholder="Bottom..."
-							step="0.001"
-							required
-							min="0"
-					>
-				</label>
-				<label>
-					Side
-					<input
-							id="task4Side"
-							type="number"
-							name="input"
-							placeholder="Side..."
-							step="0.001"
-							required
-							min="0"
-					>
-				</label>
-				<div class="submitHolder">
-					<input
-							type="submit"
-							value="Calculate"
-					>
-				</div>
-			</fieldset>
-		</form>
-		<p id="task4Result">
-		</p>
-	</div>
-	<div class="logicalBlock">
-		<h3>
-			Task 5. Product
-		</h3>
-		<p id="task5AllProducts">
-		</p>
-		<form id="task5Form">
-			<fieldset>
-				<legend>Input data</legend>
+				<legend>Add</legend>
 				<label>
 					Name
 					<input
-							id="task5Name"
+							id="newName"
 							type="text"
 							name="input"
 							placeholder="Name..."
@@ -211,39 +33,20 @@
 					>
 				</label>
 				<label>
-					Manufacturer
+					Item Price
 					<input
-							id="task5Manufacturer"
-							type="text"
-							name="input"
-							placeholder="Manufacturer..."
-							required
-					>
-				</label>
-				<label>
-					Price
-					<input
-							id="task5Price"
+							id="newItemPrice"
 							type="number"
 							step="0.01"
 							name="input"
-							placeholder="Price..."
-							required
-					>
-				</label>
-				<label>
-					Expiration Date
-					<input
-							id="task5ExpirationDate"
-							type="date"
-							name="input"
+							placeholder="Item Price..."
 							required
 					>
 				</label>
 				<label>
 					Quantity
 					<input
-							id="task5Quantity"
+							id="newQuantity"
 							type="number"
 							name="input"
 							placeholder="Quantity..."
@@ -258,51 +61,12 @@
 				</div>
 			</fieldset>
 		</form>
-
-		<h3>Find products</h3>
-		<form id="task5FilterForm">
-			<fieldset>
-				<legend>Filter data</legend>
-				<label>
-					Name
-					<input
-							id="task5FilterName"
-							type="text"
-							name="input"
-							placeholder="Name..."
-							required
-					>
-				</label>
-				<label>
-					Price
-					<input
-							id="task5FilterPrice"
-							type="number"
-							step="0.01"
-							name="input"
-							placeholder="Price..."
-							required
-					>
-				</label>
-				<label>
-					Expiration Date
-					<input
-							id="task5FilterExpirationDate"
-							type="date"
-							name="input"
-							required
-					>
-				</label>
-				<div class="submitHolder">
-					<input
-							type="submit"
-							value="Find"
-					>
-				</div>
-			</fieldset>
-		</form>
-		<p id="task5Result">
-		</p>
+		<div id='clearAll' class="submitHolder">
+			<input
+					type="submit"
+					value="Clear All"
+			>
+		</div>
 	</div>
 </div>
 </body>

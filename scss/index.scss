@@ -80,6 +80,25 @@ form {
   }
 }
 
-#task3Result {
-  text-align: right;
+#productsTable {
+  th {
+    font-weight: normal;
+    border: 1px solid black;
+    min-width: 140px;
+    padding: 4px 10px;
+  }
+
+  margin: 10px;
+}
+
+#clearAll {
+  margin: 30px 0 5px;
+
+  input {
+    background: #f62a29;
+    color: white;
+    font-size: 20px;
+    padding: 4px 20px;
+    border-radius: 16px;
+  }
 }

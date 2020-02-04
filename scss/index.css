@@ -64,8 +64,25 @@ form input[type=submit] {
   font-size: 20px;
 }
 
-#task3Result {
-  text-align: right;
+#productsTable {
+  margin: 10px;
+}
+#productsTable th {
+  font-weight: normal;
+  border: 1px solid black;
+  min-width: 140px;
+  padding: 4px 10px;
+}
+
+#clearAll {
+  margin: 30px 0 5px;
+}
+#clearAll input {
+  background: #f62a29;
+  color: white;
+  font-size: 20px;
+  padding: 4px 20px;
+  border-radius: 16px;
 }
 
 /*# sourceMappingURL=index.css.map */
